@@ -22,7 +22,19 @@ this uses the default MQTT integration.
 
 1. Download the birdhouse-camera.yaml code and open the ESPHOME dashboard.
 2. pass the code into the editor: ![image](setup.gif)
-3. open the file and alter the WIFI connection with your own user&password
+3. open the file and alter the WIFI connection with your own user&password, it uses an secret.yaml file for the SSID and password. You can hardcode it if you want.
+
+<wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  domain: .lan>
+
+hardcoded example:
+ <wifi:
+  ssid: "mywifi"
+  password: "myrandompassword123"
+  domain: .lan>
+
 4. Use or disable MQTT integration
 5. Upload the code to the ESP32 chip.
 6. Reboot the chip, and connect to it by ESHome dashboard or direct on the IP.
