@@ -20,7 +20,7 @@ fast video for setup: https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/
 
 
 1) Download the birdhouse-camera.yaml code and open the ESPHOME dashboard.
-2) pass the code into the editor: https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/setup.gif
+2) pass the code into the editor: ![alt text](http://url/to/img.png) https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/setup.gif
 
 2) open the file and alter the WIFI connection with your own user&password
 3) Use or disable MQTT integration

@@ -5,8 +5,8 @@ esphome:
   board: esp32dev
 
 substitutions:
-  devicename: AHWOOD-BIRDHOUSE
-  hostname: "AHWOOD-BIRDHOUSE"
+  devicename: "ahwood_birdhouse"
+  hostname: "ah_birdhouse"
   #friendly_name: 
   device_description: Birdhouse with WIFI camera in an default ESP32-CAM module.
   
@@ -26,14 +26,14 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "${hostname} fallback Hotspot"
+    ssid: "${hostname} Hotspot"
     password: "1234567890"
 
 # Enable logging
 logger:
   level: debug
 
-# Enable Home Assistant API.
+# Enable Home Assistant API. disable line 37,38 if you don't use Home-assitant.
 api:
   reboot_timeout: 0s
 
@@ -50,14 +50,15 @@ web_server:
 #   username: #broker user#
 #   password: !secret #mqtt_password#
 
-
+#enable air updates by browser.
 ota:
 
+#sync time
 time:
   - platform: homeassistant
     id: homeassistant_time
     
-    
+# set illumination led OFF by start-up    
 globals:
   - id: brightness_val
     type: int
@@ -122,7 +123,7 @@ light:
 #     update_interval: 10s
 
 
- sensor:
+sensor:
   - platform: uptime
     name: $hostname Uptime
     disabled_by_default: true
