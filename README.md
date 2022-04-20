@@ -1,3 +1,5 @@
+## Find this repository at: https://github.com/Bluemotica/ESPHOME-birdhouse/
+
 # ESPHOME-birdhouse
 A default ESPHOME configuration for use with my birdhouse with WIFI camera
 
@@ -30,7 +32,7 @@ this uses the default MQTT integration.
 
 After setup you can look to the camera with any browser, just go to the IP of your camera or use the local DNS: http://ah_birdhouse.lan 
 (if your router suport MDNS resolving). you will find an webspage with the switches and log:
-![image](https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/webinterface.png)
+![image](webinterface.png)
 * The  the videostream is on the configurated port (default 8081): http://ah_birdhouse.lan 
 * The snapshot (default 8080) on: http://ah_birdhouse.lan:8080 
 
