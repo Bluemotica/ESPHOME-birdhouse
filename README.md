@@ -19,7 +19,7 @@ this uses the default MQTT integration.
 *fast video for setup: https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/setup.mp4*
 
 1. Download the birdhouse-camera.yaml code and open the ESPHOME dashboard.
-2. pass the code into the editor: ![image] (https://github.com/Bluemotica/ESPHOME-birdhouse/blob/main/setup.gif)
+2. pass the code into the editor: ![image](setup.gif)
 3. open the file and alter the WIFI connection with your own user&password
 4. Use or disable MQTT integration
 5. Upload the code to the ESP32 chip.
