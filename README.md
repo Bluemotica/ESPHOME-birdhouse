@@ -1,5 +1,9 @@
 ## Find this repository at: https://github.com/Bluemotica/ESPHOME-birdhouse/
 
+## releasenotes:
+
+last update: 03-2023
+
 # ESPHOME-birdhouse
 A default ESPHOME configuration for use with my birdhouse with WIFI camera
 
